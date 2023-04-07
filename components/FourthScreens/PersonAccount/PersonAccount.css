@@ -1,0 +1,537 @@
+.person_account_main_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+  }
+  
+  #main_heading_div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      height: 40px;
+      margin-top: 10px;
+    }
+    
+    #main_heading_div > img {
+      width: 30px;
+      height: 30px;
+      color: #2d2d2d;
+      cursor: pointer;
+    }
+    
+    #main_heading_div > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.1px;
+      color: #2d2d2d;
+      width: 190px;
+      height: 24px;
+    }
+    
+    #horizontal_line {
+      width: 55%;
+      border: 1px solid #eeeeee;
+      margin-top: 15px;
+    }
+  
+    .person_account_balance {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 50%;
+      height: auto;
+      margin-top: 20px;
+      margin-left: -2%;
+      text-align: justify;
+    }
+    
+    .person_account_balance > h1 {
+      width: 200px;
+      height: 20px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: #2d2d2d;
+      margin-top: 10px;
+      margin-left: 12px;
+    }
+    
+    .person_account_balance > p {
+      width: 350px;
+      height: 14px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.4px;
+      color: #757575;
+      margin-top: 10px;
+    }
+    
+    .person_account_balance > input {
+      width: 600px;
+      height: 50px;
+      background-color: #f6f6f6;
+      border-radius: 10px;
+      border: none;
+      text-indent: 10px;
+      font: 18px;
+      margin-top: 10px;
+    }
+
+    .person_account_opening_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 60%;
+        height: auto;
+        margin: 20px 0;
+        margin-left: 10%;
+      }
+      
+      .person_add_accounts_inner_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: auto;
+      }
+      
+      .person_add_accounts_inner_div > img {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+      }
+      
+      .person_add_accounts_inner_div > p {
+        width: 150px;
+        height: 48px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: #2d2d2d;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-top: 2%;
+      }
+      
+      #person_left_side {
+        border: 2px solid #4799a6;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      
+      #person_left_side > h5 {
+        color: #4799a6;
+        margin-top: 3%;
+      }
+      
+      #person_right_side {
+        border: 2px solid #757575;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      
+      #person_right_side > h5 {
+        color: #e42538;
+        margin-top: 3%;
+      }
+      
+    
+  
+    #add_person_btn {
+      background-color: #4799a6;
+      border-radius: 10px;
+      width: 500px;
+      height: 50px;
+      color: white;
+      text-align: center;
+      border: 2px solid #4799a6;
+      margin: 20px 0;
+      cursor: pointer;
+      margin-left: -10%;
+    }
+  
+    /* ___________________________Media Query For 320px ______________________________ */
+  
+  @media (max-width: 320px) {
+    .person_account_main_div {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      margin-top: 2%;
+    }
+  
+    #main_heading_div {
+      width: 100%;
+      max-width: 320px;
+      height: 40px;
+      margin-top: 10px;
+    }
+  
+    #main_heading_div > img {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      margin-right: 15px;
+    }
+  
+    #main_heading_div > h1 {
+      width: 190px;
+      height: 24px;
+    }
+  
+    #horizontal_line {
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #eeeeee;
+      margin-top: 15px;
+    }
+  
+  
+    .person_account_balance {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin-left: 12px;
+    }
+  
+    .person_account_balance > h1 {
+      max-width: 320px;
+      width: 180px;
+      font-size: 20px;
+    }
+  
+    /* .person_account_balance > p {
+      max-width: 320px;
+      font-size: 11px;
+      margin-top: 5px;
+    } */
+  
+    #person_p{
+      max-width: 320px;
+      font-size: 12px;
+      margin-left: 0%;
+      width: 100%;
+      margin-top: 9px;
+  
+    }
+  
+    .person_account_balance > input {
+      max-width: 280px;
+      height: 50px;
+      font: 18px;
+      margin-left: 5px;
+    }
+    .person_account_opening_div {
+        width: 100%;
+        max-width: 320px;
+      }
+    
+      .person_add_accounts_inner_div {
+        width: 46%;
+        height: auto;
+      }
+    
+      .person_add_accounts_inner_div > img {
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+      }
+    
+      .person_add_accounts_inner_div > p {
+        width: 140px;
+        height: 48px;
+        font-size: 12px;
+        margin-top: 5%;
+      }
+    
+      #person_left_side {
+        border: 2px solid #4799a6;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+    
+      #person_left_side > h5 {
+        color: #4799a6;
+        margin-top: 5%;
+      }
+    
+      #person_right_side {
+        border: 2px solid #757575;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    
+      #person_right_side > h5 {
+        color: #e42538;
+        margin-top: 5%;
+      }
+
+    #add_person_btn {
+      max-width: 280px;
+      height: 50px;
+      margin: 20px 0;
+    }
+  }
+  
+  /* ___________________________Media Query For 425px ______________________________ */
+  
+  @media (min-width:321px) and (max-width: 425px) {
+    .person_account_main_div {
+      width: 100%;
+      max-width: 425px;
+      height: auto;
+      margin-top: 2%;
+    }
+  
+    #main_heading_div {
+      width: 100%;
+      max-width: 425px;
+      height: 40px;
+      margin-top: 10px;
+    }
+  
+    #main_heading_div > img {
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+      margin-right: 15px;
+    }
+  
+    #main_heading_div > h1 {
+      width: 190px;
+      height: 24px;
+    }
+  
+    #horizontal_line {
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid #eeeeee;
+      margin-top: 15px;
+    }
+  
+    .person_account_balance {
+      max-width: 425px;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin-left: 12px;
+    }
+  
+    .person_account_balance > h1 {
+        max-width: 425px;
+        width: 180px;
+        font-size: 20px;
+      }
+    
+    #person_p{
+      max-width: 425px;
+      font-size: 13px;
+      margin-left: -8%;
+      width: 100%;
+      margin-top: 8px;
+  
+    }
+  
+    .person_account_balance > input {
+      max-width: 365px;
+      height: 50px;
+      font: 18px;
+      margin-left: 5px;
+    }
+
+    .person_account_opening_div {
+        width: 100%;
+        max-width: 425px;
+      }
+    
+      .person_add_accounts_inner_div {
+        width: 45%;
+        height: auto;
+      }
+    
+      #person_left_side {
+        border: 2px solid #4799a6;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+    
+      #person_left_side > h5 {
+        color: #4799a6;
+        margin-top: 5%;
+      }
+    
+      #person_right_side {
+        border: 2px solid #757575;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    
+      #person_right_side > h5 {
+        color: #e42538;
+        margin-top: 5%;
+      }
+    
+      .person_add_accounts_inner_div > img {
+        width: 45px;
+        height: 45px;
+        margin-top: 10px;
+      }
+    
+      .person_add_accounts_inner_div > p {
+        width: 150px;
+        height: 48px;
+        font-size: 14px;
+        margin-top: 10%;
+      }
+    
+  
+    #add_person_btn {
+      max-width: 350px;
+      height: 50px;
+      margin: 20px;
+    }
+  }
+  
+  /* ___________________________Media Query For 768px ______________________________ */
+  
+  @media (min-width:426px) and (max-width: 768px) {
+    .person_account_main_div {
+      width: 100%;
+      max-width: 768px;
+      height: auto;
+      margin-top: 2%;
+    }
+  
+    #main_heading_div {
+      width: 100%;
+      max-width: 600px;
+      height: 40px;
+      margin-top: 10px;
+    }
+  
+    #main_heading_div > img {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      margin-right: 15px;
+    }
+  
+    #main_heading_div > h1 {
+      width: 200px;
+      height: 24px;
+    }
+  
+    #horizontal_line {
+      width: 100%;
+      max-width: 600px;
+      border: 1px solid #eeeeee;
+      margin-top: 15px;
+    }
+  
+  
+    .person_account_balance {
+      max-width: 768px;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin-left: 12px;
+    }
+  
+    .person_account_balance > h1 {
+      max-width: 100%;
+      width: 190px;
+      font-size: 24px;
+    }
+     
+    .person_account_balance > input {
+      max-width: 450px;
+      height: 50px;
+      font: 18px;
+      margin-left: 5px;
+    }
+     #person_p{
+      max-width: 390px;
+      font-size: 15px;
+      margin-left: -1%;
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .person_account_opening_div {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .person_add_accounts_inner_div {
+    width: 45%;
+    height: auto;
+  }
+
+  #person_left_side {
+    border: 2px solid #4799a6;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  #person_left_side > h5 {
+    color: #4799a6;
+    margin-top: 3%;
+  }
+
+  #person_right_side {
+    border: 2px solid #757575;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  #person_right_side > h5 {
+    color: #e42538;
+    margin-top: 3%;
+  }
+
+  .person_add_accounts_inner_div > img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .person_add_accounts_inner_div > p {
+    width: 180px;
+    height: 75px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 3%;
+  }
+  
+    #add_person_btn {
+      max-width: 400px;
+      height: 50px;
+      margin: 20px;
+    }
+  }
+  
