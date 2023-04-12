@@ -4,34 +4,25 @@
 
 import './App.css';
 
- import Onboarding1 from './Screen_Components/Onboarding_Screens/OnboardingScreen_1/Onboarding1';
- import Onboarding2 from './Screen_Components/Onboarding_Screens/OnboardingScreen_2/Onboarding2';
- import Onboarding3 from './Screen_Components/Onboarding_Screens/OnboardingScreen_3/Onboarding3';
+ import Onboarding1 from './Screen_Components/Onboarding_Screens/Onboarding1';
+ import Onboarding2 from './Screen_Components/Onboarding_Screens/Onboarding2';
+ import Onboarding3 from './Screen_Components/Onboarding_Screens/Onboarding3';
 // 
  import HKAccountMain from './Screen_Components/main_screen/HKAccountMain';
  import HKAccountItem from './Screen_Components/second_screen/HKAccountItem';
 // 
- import AddNewAccount from './Screen_Components/Fourth_Screen_Add_Account/Fourth_First_Screen/AddNewAccount';
- import SelectAccount from './Screen_Components/Fourth_Screen_Add_Account/Fourth_Second_Screen/SelectAccount';
- import AddBankAccount from './Screen_Components/Fourth_Screen_Add_Account/Fourth_Third_Screen/AddBankAccount';
+ import AddNewAccount from './Screen_Components/Fourth_Screen/NewAccount/AddNewAccount';
+ import SelectAccounts from './Screen_Components/Fourth_Screen/SelectAccount/SelectAccounts';
+ import AddBankAccount from './Screen_Components/Fourth_Screen/BankAccount/AddBankAccount';
 // 
- import Fourth_Screen_Cash_Account from './Screen_Components/Fourth_Screen_Add_Account/Fourth_Screen_Cash_Account';
- import Fourth_Screen_Person_Account from './Screen_Components/Fourth_Screen_Add_Account/Fourth_Screen_Person_Account';
- import Main_third_screen from './Screen_Components/Third_Screen/main_third_screen';
+ import CashAccount from './Screen_Components/Fourth_Screen/CashAccount/Fourth_Screen_Cash_Account';
+ import PersonAccount from './Screen_Components/Fourth_Screen/PersonAccount/Fourth_Screen_Person_Account';
+ import AccountsDashboard from './Screen_Components/Third_Screen/AccountsDashboard';
 
  import {Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      {/* <Onboarding1 /> */}
-      {/* <AddNewAccount /> */}
-      {/* <SelectAccount /> */}
-      {/* <AddBankAccount /> */}
-      {/* <Fourth_Screen_Cash_Account /> */}
-      {/* <Fourth_Screen_Person_Account /> */}
-
-
-
         <Routes>
           <Route exact path="/" element={<Onboarding1 />} />
           <Route path="/Onboarding2" element={<Onboarding2 />} />
@@ -41,16 +32,15 @@ function App() {
           <Route path="/secondScreen" element={<HKAccountItem />} />
          
           <Route path="/addAccount" element={<AddNewAccount />} />
-          <Route path="/selectAccount" element={<SelectAccount />} />
+          <Route path="/selectAccount" element={<SelectAccounts />} />
           <Route path="/addBankAccount"  element={<AddBankAccount />} />
          
-          <Route path="/addCashAccount" element={<Fourth_Screen_Cash_Account />} />
-          <Route path="/addPersonAccount" element={<Fourth_Screen_Person_Account />} />
+          <Route path="/addCashAccount" element={<CashAccount />} />
+          <Route path="/addPersonAccount" element={<PersonAccount />} />
 
-          <Route path="/thirdScreen" element={<Main_third_screen />} />
+          <Route path="/thirdScreen" element={<AccountsDashboard />} />
         </Routes>
 
-      {/* <HKBottomNav /> */}
   
     </div>
   );
