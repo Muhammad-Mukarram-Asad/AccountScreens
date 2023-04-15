@@ -4,6 +4,7 @@
   display: grid;
   border-radius: 16px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  margin-top: 10px;
 }
 
 .AccountItem-overlay {
@@ -110,36 +111,47 @@
   margin-right: 5px;
 }
 .AccountItem-spend-amount > .amount {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  width: 100px;
+height: 40px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.09);
 
-  line-height: 40px;
-  /* identical to box height, or 125% */
+/* Inside auto layout */
 
-  display: flex;
-  align-items: center;
+flex: none;
+order: 1;
+flex-grow: 0;
 
-  /* White */
-
-  color: #ffffff;
 }
 .AccountItem-account-icon-area {
   grid-area: iconArea;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
   margin-right: 30px;
 }
+
+.AccountItem-account-icon-area > img{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
 .AccountItem-account-icon-area-btn-main {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 65px;
+  border-radius: 50%;
   border: 0px;
   background: #ffffff;
   height: 56px;
@@ -152,27 +164,39 @@
 
 /* ____________________Yahan sa meri CSS Hai_____________________________________ */
 
-.title {
+.HK_AccountItem_title {
   width: 100%;
-  height: auto;
+  height: 50px;
+  border-bottom: 1px solid grey ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.title > h1 {
+.HK_AccountItem_title > img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+#hide_right_arrow{
+  visibility: hidden;
+}
+
+.HK_AccountItem_title > h1 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.3px;
   color: #2d2d2d;
+  margin-top: 20px;
+  width: 100%;
 }
 
-.title > #hr {
-  max-width: 375px;
-  border: 1px solid #d7d7d7;
-  margin-top: 30px;
-}
 
 .accounts_div {
   display: flex;
@@ -219,22 +243,6 @@
   cursor: pointer;
 }
 
-/* #accounts_btn > p {
-  width: 115px;
-  height: 20px;
-  font-size: 14px;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  line-height: 16px;
-  text-align: right;
-  letter-spacing: 0.5px;
-  color: #2d2d2d;
-  text-decoration: none;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-} */
 
 #accounts_btn:hover {
   color: black;
@@ -246,32 +254,40 @@
 /* __________________Media Query of 320px Below:________________________________ */
 
 @media (max-width: 320px) {
-  .title {
-    max-width: 300px;
-    height: auto;
+  .HK_AccountItem_title {
+    max-width: 320px;
     margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .title > #hr {
-    max-width: 300px;
-    display: block;
-    margin: 15px auto;
+  .HK_AccountItem_title > img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
   }
 
-  .title > h1 {
+  #hide_right_arrow{
+    visibility: hidden;
+  }
+
+  .HK_AccountItem_title > h1 {
     font-size: 18px;
     text-align: center;
-    max-width: 100%;
   }
-
+  .AccountItem-Container {
+     max-width: 320px;
+  }
   .accounts_div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 300px;
-    height: max-content;
-    margin: 20px 0;
+    max-width: 320px;
+    height: auto;
   }
   .accounts_div > h2 {
     max-width: 150px;
@@ -289,12 +305,18 @@
     margin: 10px 5px;
   }
 
+  .accountlistingdiv{
+    background-color: #e5e5e5;
+    max-width: 320px;
+    height: auto;
+  }
+
  
 
   #custom_div {
-    max-width: 280px;
+    max-width: 315px;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   .AccountItem-account-icon-area {
     display: flex;
@@ -302,14 +324,17 @@
     align-items: center;
     margin-right: 10px;
   }
+  
+  .AccountItem-account-icon-area > img{
+    width: 22px;
+    height: 22px;
+    margin-left: 40px;
+  }
   .AccountItem-account-icon-area-btn-main {
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50px;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
   }
   .AccountItem-info-account-area {
     display: flex;
@@ -324,26 +349,46 @@
 /* ______________________Media Query of 425px Below:_______________________________ */
 
 @media (min-width: 321px) and (max-width: 425px) {
-  .title {
+  .HK_AccountItem_title {
     max-width: 425px;
     margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  .title > #hr {
-    display: block;
-    margin: 15px auto;
-    max-width: 400px;
+  .HK_AccountItem_title > img{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    margin-left: 10px;
   }
 
-  .title > h1 {
-    font-size: 22px;
+  #hide_right_arrow{
+    visibility: hidden;
+  }
+
+  .HK_AccountItem_title > h1 {
+    font-size: 20px;
     text-align: center;
-    max-width: 100%;
+  }
+  .AccountItem-Container
+  {
+   max-width: 420px;
+   height: auto;
+
+  }
+
+  .mainGrid-account {
+   max-width: 420px;
+   height: auto;
   }
 
   .accounts_div {
-    max-width: 380px;
+    max-width: 420px;
     height: 50px;
-    margin: 20px 6px;
+    margin: 20px 0;
+    border-radius: 10px;
   }
   .accounts_div > h2 {
     font-size: 20px;
@@ -361,25 +406,26 @@
   }
 
   #custom_div {
-    max-width: 380px;
-    margin-top: 15px;
-    margin-left: 5px;
+    max-width: 420px;
+    margin: 8px 3px;
   }
+
+.accountlistingdiv{
+  max-width: 420px;
+}
   .AccountItem-account-icon-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
+    margin-right: 25px;
+  }
+  .AccountItem-account-icon-area > img{
+    width: 25px;
+    height: 25px;
   }
   .AccountItem-account-icon-area-btn-main {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
   }
+
   .AccountItem-info-account-area {
     display: flex;
     justify-content: space-around;
@@ -393,58 +439,83 @@
 /* ______________________Media Query of 768px Below:_______________________________ */
 
 @media (min-width: 426px) and (max-width: 768px) {
-  .title {
-    max-width: 700px;
+  .HK_AccountItem_title {
+    max-width: 760px;
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  .title > #hr {
-    display: block;
-    margin: 15px auto;
-    max-width: 600px;
+  .HK_AccountItem_title > img{
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
   }
 
-  .title > h1 {
-    font-size: 23px;
+  #hide_right_arrow{
+    visibility: hidden;
+  }
+  
+  .HK_AccountItem_title > h1 {
+    font-size: 25px;
     text-align: center;
-    max-width: 100%;
+  }
+
+  .AccountItem-Container
+  {
+   max-width: 760px;
+   height: auto;
+
+  }
+
+  .mainGrid-account {
+   max-width: 760px;
+   height: auto;
+   margin-right: 15px;
   }
 
   .accounts_div {
-    max-width: 600px;
+    max-width: 760px;
     height: auto;
-    margin: 20px 16px;
+    margin: 20px 0;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
   }
   .accounts_div > h2 {
     font-size: 20px;
   }
   #accounts_btn > #plus_icon {
     color: #4799a6;
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
   }
   #accounts_btn {
     width: 200px;
-    height: 35px;
+    height: 40px;
     margin: 10px;
     text-align: center;
   }
 
   #custom_div {
-    max-width: 600px;
-    margin-top: 15px;
-    margin-left: 16px;
+    max-width: 760px;
+    margin: 10px 4px;
   }
+
+  .accountlistingdiv{
+    max-width: 760px;
+    height: auto;
+  }
+
   .AccountItem-account-icon-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 10px;
   }
+
+  .AccountItem-account-icon-area > img{
+    width: 28px;
+    height: 28px;
+  }
   .AccountItem-account-icon-area-btn-main {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50px;
     height: 60px;
     width: 60px;
