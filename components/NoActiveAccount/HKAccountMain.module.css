@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+
+.whatYouHave-Container {
+  display: grid;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  height: 122px;
+}
+.whatYouHave-content {
+  grid-area: 1 / 1;
+  opacity: 100;
+  border-radius: 16px;
+}
+.whatYouHave-overlay {
+  grid-area: 1 / 1;
+  border-radius: 16px;
+}
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr auto auto;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "info info info"
+    "spend iconArea iconArea";
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.info-area {
+  grid-area: info;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.info-area > img {
+  margin-bottom: 5px;
+}
+.available-to-spend-area {
+  grid-area: spend;
+  padding-left: 30px;
+}
+.available-to-spend-area > .heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+
+  /* White */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+.spend-amount {
+  display: flex;
+  align-items: baseline;
+}
+.spend-amount > .currency {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* identical to box height, or 140% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+
+  color: #ffffff;
+  margin-right: 5px;
+}
+.spend-amount > .amount {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  line-height: 40px;
+  /* identical to box height, or 125% */
+
+  display: flex;
+  align-items: center;
+
+  /* White */
+
+  color: #ffffff;
+}
+.account-icon-area {
+  grid-area: iconArea;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 25px;
+}
+.account-icon-area-btn-main {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 65px;
+  border: 0px;
+  background: white;
+  height: 56px;
+  width: 56px;
+}
+
+
+/* ************************* My CSS Starts from Here ******************************** */
+.my_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  
+}
+
+.HKAccountMain_title_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 50px;
+  border-bottom: 1px solid grey ;
+}
+.HKAccountMain_title_div > img{
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.hide_right_arrow{
+  visibility: hidden;
+}
+
+.my_div > h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+  text-align: center;
+  color: #2d2d2d;
+  width: 100%;
+}
+.my_div > p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #757575;
+}
+.btn_primary {
+  height: 50px;
+  width: 343px;
+  border-radius: 10px;
+  background: #4799a6;
+  color: white;
+  border: 1px solid #4799a6;
+  margin-top: 20px;
+}
+.btn_primary:hover {
+  cursor: pointer;
+  background-color: #edf6f8;
+  color: #4799a6;
+  font-size: 20px;
+}
+.title {
+  width: 300px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #2d2d2d;
+}
+
+.my_div > .img {
+  max-width: 100%;
+  height: auto;
+}
+
+.my_div > .hr {
+  max-width: 375px;
+  border: 1px solid #d7d7d7;
+}
+
+/* ________________________Media Query For 330px____________________________________ */
+
+@media (min-width:260px) and (max-width: 320px) {
+  .my_div {
+    max-width: 320px;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .HKAccountMain_title_div{
+    max-width: 320px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .HKAccountMain_title_div > img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* .my_div > .hr {
+    max-width: 300px;
+    margin-top: 15px;
+  } */
+
+  .my_div > h2 {
+    font-size: 14px;
+  }
+  .my_div > p {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .btn_primary {
+    height: 50px;
+    max-width: 290px;
+    margin-top: 15px;
+  }
+  .btn_primary:hover {
+    cursor: pointer;
+    background-color: black;
+    font-size: 20px;
+  }
+
+  .my_div > .img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+/* ____________________Media Query For 425px______________________________________ */
+
+@media (min-width: 321px) and (max-width: 425px) {
+  .my_div {
+    max-width: 425px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .HKAccountMain_title_div{
+    max-width: 425px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .HKAccountMain_title_div > img{
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+  }
+  
+  .title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .my_div > .hr {
+    max-width: 380px;
+    margin-top: 15px;
+  }
+
+  .my_div > h2 {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  .my_div > p {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 15px;
+  }
+
+  .btn_primary {
+    height: 50px;
+    max-width: 350px;
+    margin-top: 15px;
+  }
+
+  .btn_primary:hover {
+    cursor: pointer;
+    background-color: skyblue;
+    font-size: 22px;
+  }
+}
+
+
+  /* ____________________Media Query For 768px______________________________________ */
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .my_div {
+    max-width: 768px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .HKAccountMain_title_div{
+    max-width: 760px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .HKAccountMain_title_div > img{
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+  }
+
+  
+  .title {
+    font-size: 25px;
+    text-align: center;
+  }
+ 
+  .my_div > h2 {
+    font-size: 20px;
+    font-style: normal;
+  }
+
+  .my_div > p {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 15px;
+  }
+
+  .btn_primary {
+    height: 50px;
+    max-width: 350px;
+    margin-top: 15px;
+  }
+
+  .btn_primary:hover {
+    cursor: pointer;
+    background-color: skyblue;
+    font-size: 24px;
+  }
+
+
+  .my_div > .img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+
