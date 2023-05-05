@@ -9,16 +9,18 @@
     background-color: white;
   }
   
-  .img_div {
-    width: 400px;
-    height: 400px;
+  .img_div, .img_center {
+    width: 450px;
+    height: 450px;
     background-color: #edf6f8;
     margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .img_div > img {
-    max-width: 100%;
+  .img_center > img {
+    width: 353px;
     height: auto;
-    margin-top: 60px;
   }
   .h_p_div {
     display: flex;
@@ -48,8 +50,8 @@
     font-family: "Lato";
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
     color: #757575;
     flex: none;
@@ -62,144 +64,134 @@
     flex-direction: row;
     justify-content: space-between;
     width: 200px;
-    height: 50px;
+    height: 10px;
     margin: 30px 0;
   }
   .circle {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
   }
   .btns_main_div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 400px;
-    height: max-content;
-    margin: 10px auto;
+    width: 450px;
+    height: 58px;
+    margin-bottom: 15px;
   }
   .btns {
-    width: 190px;
+    width: 170px;
     height: 50px;
     text-align: center;
     border-radius: 10px;
     cursor: pointer;
-    margin: 10px;
+    margin-top: 10px;
   }
   
-  @media (max-width: 320px) {
-    .main_div_obs1 {
-      max-width: 320px;
-      height: max-content;
-    }
+/*_________________Media Query of small Devices 320px________________________*/
   
-    .img_div {
+@media (max-width: 320px) {
+  
+    .img_div, .img_center{
       max-width: 320px;
-      height: 350px;
+      height: 330px;
     }
-    .img_div > img {
+    .img_center > img {
       max-width: 100%;
       height: auto;
     }
+    
     .h_p_div {
       max-width: 320px;
+      margin-top: 20px;
     }
   
     .h_p_div > h2 {
-      max-width: 100%;
+      max-width: 300px;
       height: auto;
     }
   
     .h_p_div > p {
-      margin-top: 10px;
-      max-width: 100%;
+      max-width: 300px;
       height: auto;
     }
   
     .circle_main_div {
-      max-width: 200px;
+      max-width: 140px;
+      text-align: center;
     }
   
     .btns_main_div {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      flex-direction: row;
+      justify-content: space-evenly;
       align-items: center;
       max-width: 320px;
-      height: max-content;
-      margin: 10px auto;
+      height: 58px;
+      margin-bottom: 15px;
     }
     .btns {
-      width: 200px;
+      width: 140px;
       height: 50px;
-      margin-top: 10px;
     }
   }
 
-  /* Media Queries CSS Below: */
+  /*_______________Media Query Medium Mobile Devices ____________________________: */
 
 @media (min-width: 321px) and (max-width: 425px) {
-    .main_div_obs1 {
+    .img_div, .img_center {
       max-width: 425px;
-      height: auto;
+      height: 440px;
     }
-  
-    .img_div {
-      max-width: 425px;
-      height: 400px;
-      margin: auto;
-    }
-    .img_div > img {
+    .img_center > img {
       max-width: 100%;
       height: auto;
     }
+
     .h_p_div {
-      max-width: 100%;
-      margin-top: 60px;
+      max-width: 420px;
+      margin-top: 20px;
     }
   
     .h_p_div > h2 {
-      font-size: 24px;
+      font-size: 20px;
       max-width: 100%;
       height: auto;
     }
   
     .h_p_div > p {
-      font-size: 22px;
+      font-size: 14px;
       max-width: 100%;
       height: auto;
-      margin-top: 10px;
       width: 301px;
     }
   
     .circle_main_div {
-      max-width: 400px;
+      max-width: 140px;
+      text-align: center;
     }
   
     .btns_main_div {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      flex-direction: row;
+      justify-content: space-around;
       align-items: center;
-      max-width: 420px;
-      height: auto;
-      margin: 10px auto;
+      width: 375px;
+      height: 58px;
+      margin-left: 15px;
     }
+
     .btns {
-      width: 200px;
+      width: 165px;
       height: 50px;
       border-radius: 10px;
-      margin-top: 12px;
     }
   
     #getStarted_btn {
-      font-size: 22px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 250px;
+      font-size: 16px;
+      width: 343px;
       height: 50px;
       margin-top: 10px;
       text-align: center;
