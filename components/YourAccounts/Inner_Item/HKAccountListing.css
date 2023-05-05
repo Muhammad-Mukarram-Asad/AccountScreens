@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
 
+.listItemWithBgMain_div{
+  background-color: white;
+  width: 900px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 20px;
+  padding: 5px;
+  position: relative;
+}
 .ListItemWithoutBg {
   display: flex;
   align-items: center;
@@ -7,17 +17,25 @@
   cursor: pointer;
   margin-bottom: 20px;
 }
+
+.BgMain_Inner_div{
+width: 100%;
+height:auto;
+margin: 0;
+border: none;
+/* border: 1px solid red; */
+}
+
 .ListItemWithBg {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background: #ffffff;
-  /* Card */
+  align-items: center;
   padding: 8px 12px;
-
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
-  border-radius: 16px;
+  margin: 0;
   cursor: pointer;
+  /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05); */
+  /* border-radius: 16px; */
+  /* border: 1px solid yellow; */
 }
 .AccountArea {
   display: flex;
@@ -31,15 +49,11 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height, or 133% */
-
   letter-spacing: 0.5px;
-
-  /* Gray / Base 600 */
-
   color: #2d2d2d;
   text-transform: capitalize;
 }
+
 .AmountArea {
   display: flex;
   align-items: center;
@@ -54,36 +68,200 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
-  /* or 133% */
-
   text-align: right;
   letter-spacing: 0.4px;
-
-  /* Gray/T 500 */
-
   color: #757575;
 }
+
 .AmountArea > img {
   margin-left: 10px;
 }
+
 .icon-circle-AccountArea {
   padding: 10px;
   border: 1px solid #d7d7d7;
-  border-radius: 45.5px;
+  border-radius: 50px;
   font-size: 12px;
   justify-content: center;
   align-items: center;
   margin-right: 10px;
 }
+.icon-circle-AccountArea > img{
+  width: 25px;
+  height: 25px;
+}
 
-@media (min-width:421px) and (max-width: 768px)
+/*__________________ Media Query of small screen devices_________________________ */
+@media (max-width:320px)
 {
-  .ListItemWithBg {  
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
-    border-radius: 16px;
+  .listItemWithBgMain_div{
+    max-width: 300px;
+    height: auto;
+    border-radius: 28px;
+  }
+ 
+  .ListItemWithBg {
+    margin: 0;
+    padding: 8px 12px;
     cursor: pointer;
-    max-width: 600px;
-    margin-left: 15px;
+    max-width: 300px;
+  }
+  .AccountArea {
+    display: flex;
+    align-items: center;
+  }
+  .AccountArea > p {
+    
+    font-size: 12px;   
+    color: #2d2d2d;
+  }
+  
+  .AmountArea {
+    display: flex;
+    align-items: center;
+  }
+  .AmountArea > p {
+    font-size: 12px;
+  }
+  
+  .AmountArea > img {
+    margin-left: 10px;
+  }
+  
+  .icon-circle-AccountArea {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .icon-circle-AccountArea > img{
+    width: 20px;
+    height: 20px;
+  }
+  
+}
+
+/*__________________ Media Query of Medium Screen Devices___________________ */
+
+@media (min-width:321px) and (max-width: 380px)
+{
+  .listItemWithBgMain_div {
+    max-width: 360px;
+    height: auto;
+    border-radius: 28px;
+    width: 100%;
+}
+  .ListItemWithBg {  
+    max-width: 360px;
+    margin: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .AccountArea {
+    display: flex;
+    align-items: center;
+  }
+  .AccountArea > p {
+    font-size: 13px;   
+  }
+  
+  .AmountArea > p {
+    font-size: 13px;
+  }
+  
+  .AmountArea > img {
+    margin-left: 10px;
+  }
+  
+  .icon-circle-AccountArea {
+    font-size: 13px;
+  }
+  .icon-circle-AccountArea > img{
+    width: 21px;
+    height: 21px;
+  }
+}
+
+/* _______________________Media Query of 425px Device__________________________ */
+
+@media (min-width:381px) and (max-width: 425px)
+{
+  .listItemWithBgMain_div {
+    max-width: 400px;
+    height: auto;
+    border-radius: 28px;
+    width: 100%;
+}
+  .ListItemWithBg {  
+    max-width: 400px;
+    margin: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .AccountArea {
+    display: flex;
+    align-items: center;
+  }
+  .AccountArea > p {
+    font-size: 14px;   
+  }
+  
+  .AmountArea > p {
+    font-size: 14px;
+  }
+  
+  .AmountArea > img {
+    margin-left: 10px;
+  }
+  
+  .icon-circle-AccountArea {
+    font-size: 14px;
+  }
+  .icon-circle-AccountArea > img{
+    width: 22px;
+    height: 22px;
+  }
+
+}
+
+
+
+/* _______________________Media Query of 425px Device__________________________ */
+
+@media (min-width:426px) and (max-width: 768px)
+{
+  .listItemWithBgMain_div {
+    max-width: 760px;
+    height: auto;
+    border-radius: 28px;
+    width: 100%;
+}
+  .ListItemWithBg {  
+    max-width: 760px;
+    margin: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .AccountArea {
+    display: flex;
+    align-items: center;
+  }
+  .AccountArea > p {
+    font-size: 15px;   
+  }
+  
+  .AmountArea > p {
+    font-size: 15px;
+  }
+  
+  .AmountArea > img {
+    margin-left: 10px;
+  }
+  
+  .icon-circle-AccountArea {
+    font-size: 15px;
+  }
+  .icon-circle-AccountArea > img{
+    width: 23px;
+    height: 23px;
   }
 
 }
