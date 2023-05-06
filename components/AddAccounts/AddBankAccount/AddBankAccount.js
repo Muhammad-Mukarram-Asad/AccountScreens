@@ -19,10 +19,10 @@ function AddBankAccount() {
         <img src={RightArrow} className={styles.right_arrow_icon} alt="back_arrow_image" />
       </div>
 
-      <div className={styles.horizontal_line}></div>
+      {/* <div className={styles.horizontal_line}></div> */}
 
       <div className={styles.account_title}>
-        <h1>Enter an account title</h1>
+        <h1> Account Title*</h1>
         <p> Title should be longer than 3 and less than 50 characters</p>
         <div className={styles.account_title_inner_div}>
           <img src={BankIcon} alt="bank_icon" />
@@ -32,6 +32,7 @@ function AddBankAccount() {
 
       <div className={styles.account_amount}>
         <h1>Last 4 Digits of Bank Number (Optional)</h1>
+        <p>This should help you differentiate between accounts</p>
         <input type="number" placeholder="3567" minLength={4} />
       </div>
 
@@ -41,7 +42,7 @@ function AddBankAccount() {
         <p> How much money do you already have in this account?</p>
         <div className={styles.account_balance_selection_currency}>
         <select>
-          <option selected>PKR</option>
+          <option defaultValue>PKR</option>
           <option>USD</option>
           <option>INR</option>
           <option>Euro</option>
@@ -51,7 +52,7 @@ function AddBankAccount() {
         <input type="text" placeholder="PKR 0" minLength={4} />
 
         </div>
-        <p className={styles.amount_warning_p}>Amount Cannot be negative</p>
+        <p id={styles.amount_warning_p}>Amount Cannot be negative</p>
       </div>
 
       <div className={styles.account_opening_div}>
