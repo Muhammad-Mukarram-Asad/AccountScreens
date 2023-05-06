@@ -1,5 +1,5 @@
 import React from "react";
-import Bank_Building from "../../../public/icons/Bank_Building.svg";
+import Bank_Building from "../../../public/icons/Bank.svg";
 import BackArrow from "../../../public/icons/backArrowIcon.svg";
 import RightArrow from "../../../public/icons/RightArrow.svg";
 import SearchIcon from "../../../public/icons/searchIcon.svg";
@@ -18,7 +18,7 @@ function SelectAccounts() {
         <img src={RightArrow} className={styles.right_arrow_icon} alt="back_arrow_image" />
       </div>
 
-      <div className={styles.horizontal_line}></div>
+      {/* <div className={styles.horizontal_line}></div> */}
 
       <div className={styles.search_div}>
         <img src={SearchIcon} alt="search_icon" />
