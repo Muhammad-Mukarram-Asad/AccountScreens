@@ -16,6 +16,7 @@
   width: 50%;
   height: 40px;
   margin-top: 10px;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .main_heading_div > img {
@@ -43,11 +44,11 @@
   visibility: hidden;
 }
 
-#horizontal_line{
+/* #horizontal_line{
     width: 50%;
    border: 1px solid #eeeeee;
    margin-top: 15px;
-}
+} */
 
 .selecting_account_div {
   display: flex;
@@ -60,16 +61,17 @@
 }
 
 .selecting_account_div > p {
-  width: 200px;
+  width: 250px;
   height: 20px;
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1px;
   color: #757575;
   margin-top: 20px;
+  margin-left: 5px;
 
 }
 
@@ -88,17 +90,18 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 95%;
   height: 60px;
-  margin-top: 5px;
+  margin-top: 20px;
   cursor: pointer;
-
+  border-bottom: 1px solid #EEEEEE;
 }
-.hr {
+
+/* .hr {
     width: 100%;
     margin-top: 10px;
     border: 1px solid #EEEEEE;
-}
+} */
 
 .account_list_inner_div > p {
   width: 100px;
@@ -117,7 +120,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid #eeeeee;
+  border: 1px solid #D7D7D7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,8 +143,10 @@
       .main_heading_div {
         max-width: 320px;
         height: 40px;
-        margin-top: 10px;
+        margin-top: 20px;
         width: 100%;
+        border-bottom: 1px solid #EEEEEE;
+        
       }
       
       .main_heading_div > img {
@@ -152,19 +157,12 @@
       }
       
       .main_heading_div > h1 {
-        font-size: 20px;
+        font-size: 16px;
         width: 220px;
         height: 24px;
       
       }
-      
-      #horizontal_line{
-          max-width: 320px;
-          width: 100%;
-         border: 1px solid #eeeeee;
-         margin-top: 15px;
-      }
-      
+        
       .selecting_account_div {
         width: 100%;
         max-width: 320px;
@@ -172,11 +170,8 @@
       }
 
       .selecting_account_div > p {
-        width: 200px;
-        height: 20px;
-        font-size: 16px;
-        margin-top: 20px;
-        margin-left: 10px;
+        font-size: 14px;
+        margin-left: 15px;
       }
       
       .accounts_list {
@@ -185,29 +180,24 @@
       }
       
       .account_list_inner_div {
-        max-width: 100%;
-        margin-top: 10px;
-        margin-left: 10px;
+        max-width: 300px;
+        margin: 10px;
+        border-bottom: 1px solid #EEEEEE;
       
       }
-      hr {
-          max-width: 300px;
-          margin-top: 10px;
-          border: 1px solid #EEEEEE;
-      }
-      
+  
       .account_list_inner_div > p {
         width: 100px;
         height: 16px;
         font-size: 16px;
-        margin: 25px -15px;
+        margin: 25px 10px;
       }
       
       .account_list_img_div {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        border: 2px solid #eeeeee;
+        border: 1px solid #D7D7D7;
       }
       
       .account_list_img_div > img {
@@ -221,88 +211,152 @@
 
 /* ________________________Media Query of 425px _________________________________ */
 
-@media (min-width:321px) and (max-width:425px)
+@media (min-width:321px) and (max-width:390px)
 {
-    .add_new_account_main_div {
-        max-width: 425px;
-        height: auto;
-      }
+  .add_new_account_main_div {
+    max-width: 390px;
+    height: auto;
+  }
+  
+  .main_heading_div {
+    max-width: 380px;
+    height: 40px;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    
+  }
+  
+  .main_heading_div > img {
+    width: 25px;
+    height: 25px;
+    color: #2d2d2d;
+    margin: 0 10px;
+  }
+  
+  .main_heading_div > h1 {
+    font-size: 16px;
+    width: 220px;
+    height: 24px;
+  
+  }
       
-      .main_heading_div {
-        max-width: 4250px;
-        height: 40px;
-        margin-top: 10px;
-        width: 100%;
-      }
-      
-      .main_heading_div > img {
-        width: 25px;
-        height: 25px;
-        color: #2d2d2d;
-        margin: 0 10px;
-      }
-      
-      .main_heading_div > h1 {
-        font-size: 20px;
-        width: 220px;
-        height: 24px;
-      
-      }
-      
-      #horizontal_line{
-          max-width: 425px;
-          width: 100%;
-         border: 1px solid #eeeeee;
-         margin-top: 15px;
-      }
-      
-      .selecting_account_div {
-        width: 100%;
-        max-width: 425px;
-        height: auto;
-      }
+  .selecting_account_div {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+  }
 
-      .selecting_account_div > p {
-        width: 230px;
-        height: 20px;
-        font-size: 18px;
-        margin-top: 20px;
-        margin-left: 10px;
-      }
-      
-      .accounts_list {
-        max-width: 425px;
-        height: auto;
-      }
-      
-      .account_list_inner_div {
-        max-width: 100%;
-        margin-top: 10px;
-        margin-left: 10px;      
-      }
+  .selecting_account_div > p {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  
+  .accounts_list {
+    max-width: 390px;
+    height: auto;
+  }
+  
+  .account_list_inner_div {
+    max-width: 350px;
+    margin: 10px;
+    border-bottom: 1px solid #EEEEEE;
+  
+  }
 
-      .hr {
-          max-width: 400px;
-          margin-top: 10px;
-          border: 1px solid #EEEEEE;
-      }
+  .account_list_inner_div > p {
+    width: 100px;
+    height: 16px;
+    font-size: 14px;
+    margin: 25px 10px;
+  }
+  
+  .account_list_img_div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #D7D7D7;
+  }
+  
+  .account_list_img_div > img {
+    width: 22px;
+    height: 22px;
+    margin-top: 3px;
+  }
+}
+
+/* ________________________Media Query of 425px _________________________________ */
+
+@media (min-width:391px) and (max-width:425px)
+{
+  .add_new_account_main_div {
+    max-width: 425px;
+    height: auto;
+  }
+  
+  .main_heading_div {
+    max-width: 425px;
+    height: 40px;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    
+  }
+  
+  .main_heading_div > img {
+    width: 25px;
+    height: 25px;
+    color: #2d2d2d;
+    margin: 0 10px;
+  }
+  
+  .main_heading_div > h1 {
+    font-size: 16px;
+    width: 220px;
+    height: 24px;
+  
+  }
       
-      .account_list_inner_div > p {
-        width: 100px;
-        height: 16px;
-        font-size: 16px;
-        margin: 25px -15px;
-      }
-      
-      .account_list_img_div {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: 2px solid #eeeeee;
-      }
-      
-      .account_list_img_div > img {
-        width: 25px;
-        height: 25px;
-      }
+  .selecting_account_div {
+    width: 100%;
+    max-width: 425px;
+    height: auto;
+  }
+
+  .selecting_account_div > p {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  
+  .accounts_list {
+    max-width: 425px;
+    height: auto;
+  }
+  
+  .account_list_inner_div {
+    max-width: 400px;
+    margin: 10px;
+    border-bottom: 1px solid #EEEEEE;
+  
+  }
+
+  .account_list_inner_div > p {
+    width: 100px;
+    height: 16px;
+    font-size: 14px;
+    margin: 25px 10px;
+  }
+  
+  .account_list_img_div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #D7D7D7;
+  }
+  
+  .account_list_img_div > img {
+    width: 22px;
+    height: 22px;
+    margin-top: 3px;
+  }
 }
