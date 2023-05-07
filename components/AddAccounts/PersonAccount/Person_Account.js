@@ -18,7 +18,6 @@ function PersonAccount() {
         <img src={RightArrow} className={styles.right_arrow_icon} alt="back_arrow_image" />
       </div>
 
-      <div className={styles.horizontal_line}></div>
 
       <div className={styles.person_account_balance}>
         <h1>Person Name</h1>
@@ -27,25 +26,38 @@ function PersonAccount() {
 
       <div className={styles.person_account_balance}>
         <h1>Opening Balance</h1>
-        <p className={styles.person_p}> What is the balance between you and this person?</p>
+        <p> What is the balance between you and this person?</p>
+        <div className={styles.account_balance_selection_currency}>
+        <select>
+          <option defaultValue>PKR</option>
+          <option>USD</option>
+          <option>INR</option>
+          <option>Euro</option>
+          <option>Pound</option>
+          <option>Riyal</option>
+          </select>        
         <input type="text" placeholder="PKR 0" minLength={4} />
+
+        </div>
       </div>
 
       <div className={styles.person_account_opening_div}>
           <div className={`${styles.person_add_accounts_inner_div} ${styles.person_left_side}`} onClick={()=>{navigate("/thirdScreen")}}>
             <img src={ArrowBackwardPerson} alt="acc_positive" />
-            <h5> Positive</h5>
+            <h5> Receivable</h5>
             <p>Select if this person owes your money</p>
           </div>
 
-        <div className={`${styles.person_add_accounts_inner_div} ${styles.person_left_side}`}>
+        <div className={`${styles.person_add_accounts_inner_div} ${styles.person_right_side}`}>
           <img src={ArrowRedPerson} alt="acc_negative" />
-          <h5>Negative</h5>
+          <h5>Payable</h5>
           <p>Select if you owe this person money</p>
         </div>
       </div>
 
-      <button className={styles.add_person_btn}>Add Person Account</button>
+      <div className={styles.person_btn_div}>
+        <button className={styles.add_person_btn}>Add Person Account</button>
+      </div>
     </div>
   );
 }

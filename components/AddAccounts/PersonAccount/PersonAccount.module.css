@@ -1,526 +1,692 @@
 .person_account_main_div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
+}
+
+.main_heading_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 40px;
+  margin-top: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.main_heading_div > img {
+  width: 30px;
+  height: 30px;
+  color: #2d2d2d;
+  cursor: pointer;
+}
+
+.main_heading_div > h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #2d2d2d;
+  width: 190px;
+  height: 24px;
+}
+
+.person_account_balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: -2%;
+  text-align: justify;
+}
+
+.person_account_balance > h1 {
+  width: 200px;
+  height: 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #2d2d2d;
+  margin-top: 5px;
+  margin-left: 12px;
+}
+
+.person_account_balance > p {
+  width: 350px;
+  height: 14px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #757575;
+  margin-top: 10px;
+}
+
+.person_account_balance > input {
+  width: 600px;
+  height: 50px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  border: none;
+  text-indent: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.account_balance_selection_currency {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 12px;
+  background-color: white;
+}
+
+.account_balance_selection_currency > select {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  color: #2d2d2d;
+  text-indent: 10px;
+  /* Below is the code of styling the dropdown icon: */
+  appearance: none;
+  padding-right: 10px;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/user-interface-174/32/UIF-76-64.png");
+  background-position: calc(100% - 10px) center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.account_balance_selection_currency > input {
+  width: 490px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  text-indent: 10px;
+  font: 18px;
+  background-color: #f6f6f6;
+  margin-left: 10px;
+}
+
+.person_account_opening_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  margin: 20px 0;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.person_add_accounts_inner_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36%;
+  height: auto;
+}
+
+.person_add_accounts_inner_div > img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.person_add_accounts_inner_div > p {
+  width: 150px;
+  height: 48px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #2d2d2d;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 3%;
+}
+
+.person_left_side {
+  border: 2px solid #4799a6;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.person_left_side > h5 {
+  color: #4799a6;
+  margin-top: 3%;
+}
+
+.person_right_side {
+  border: 1px solid #757575;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.person_right_side > h5 {
+  color: #e42538;
+  margin-top: 3%;
+}
+
+.person_btn_div {
+  width: 60%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  margin-left: -15%;
+}
+.add_person_btn {
+  background-color: #4799a6;
+  border-radius: 10px;
+  width: 400px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  border: 1px solid #4799a6;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+}
+
+.add_person_btn:hover {
+  background-color: #2d2d2d;
+  width: 400px;
+  font-size: 14px;
+  height: 55px;
+  border-radius: 15px;
+  color: white;
+}
+
+.right_arrow_icon {
+  visibility: hidden;
+}
+
+/* ___________________________Media Query For 320px ______________________________ */
+
+@media (max-width: 320px) {
+  .person_account_main_div {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .main_heading_div {
+    width: 100%;
+    max-width: 320px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .main_heading_div > img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .main_heading_div > h1 {
+    width: 190px;
+    height: 24px;
+    font-size: 16px;
+  }
+
+  .person_account_balance {
+    max-width: 320px;
     width: 100%;
     height: auto;
-    margin-top: 3%;
+    margin-top: 10px;
   }
-  
-  .main_heading_div {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 50%;
-      height: 40px;
-      margin-top: 10px;
-    }
-    
-    .main_heading_div > img {
-      width: 30px;
-      height: 30px;
-      color: #2d2d2d;
-      cursor: pointer;
-    }
-    
-    .main_heading_div > h1 {
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-      letter-spacing: 0.1px;
-      color: #2d2d2d;
-      width: 190px;
-      height: 24px;
-    }
-    
-    .horizontal_line {
-      width: 55%;
-      border: 1px solid #eeeeee;
-      margin-top: 15px;
-    }
-  
-    .person_account_balance {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 50%;
-      height: auto;
-      margin-top: 20px;
-      margin-left: -2%;
-      text-align: justify;
-    }
-    
-    .person_account_balance > h1 {
-      width: 200px;
-      height: 20px;
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 20px;
-      letter-spacing: 0.2px;
-      color: #2d2d2d;
-      margin-top: 10px;
-      margin-left: 12px;
-    }
-    
-    .person_account_balance > p {
-      width: 350px;
-      height: 14px;
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 14px;
-      text-align: center;
-      letter-spacing: 0.4px;
-      color: #757575;
-      margin-top: 10px;
-    }
-    
-    .person_account_balance > input {
-      width: 600px;
-      height: 50px;
-      background-color: #f6f6f6;
-      border-radius: 10px;
-      border: none;
-      text-indent: 10px;
-      font: 18px;
-      margin-top: 10px;
-    }
 
-    .person_account_opening_div {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        width: 60%;
-        height: auto;
-        margin: 20px 0;
-        margin-left: 10%;
-        cursor: pointer;
-      }
-      
-      .person_add_accounts_inner_div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 35%;
-        height: auto;
-      }
-      
-      .person_add_accounts_inner_div > img {
-        width: 40px;
-        height: 40px;
-        margin-top: 10px;
-      }
-      
-      .person_add_accounts_inner_div > p {
-        width: 150px;
-        height: 48px;
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.4px;
-        color: #2d2d2d;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        margin-top: 2%;
-      }
-      
-      .person_left_side {
-        border: 2px solid #4799a6;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-      }
-      
-      .person_left_side > h5 {
-        color: #4799a6;
-        margin-top: 3%;
-      }
-      
-      .person_right_side {
-        border: 2px solid #757575;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-      }
-      
-      .person_right_side > h5 {
-        color: #e42538;
-        margin-top: 3%;
-      }
-      
-    
-  
-    .add_person_btn {
-      background-color: #4799a6;
-      border-radius: 10px;
-      width: 400px;
-      height: 50px;
-      color: white;
-      text-align: center;
-      border: 2px solid #4799a6;
-      margin: 20px 0;
-      cursor: pointer;
-      margin-left: -10%;
-    }
-
-    .add_person_btn:hover {
-      background-color: #055763;
-      width: 420px;
-      font-size: 16px;
-      height: 55px;
-      border-radius: 15px;
-      color: white;
-    }
-
-    .right_arrow_icon{
-    visibility: hidden;
-    }
-  
-    /* ___________________________Media Query For 320px ______________________________ */
-  
-  @media (max-width: 320px) {
-    .person_account_main_div {
-      width: 100%;
-      max-width: 320px;
-      height: auto;
-      margin-top: 2%;
-    }
-  
-    .main_heading_div {
-      width: 100%;
-      max-width: 320px;
-      height: 40px;
-      margin-top: 10px;
-    }
-  
-    .main_heading_div > img {
-      width: 20px;
-      height: 20px;
-      margin-left: 10px;
-      margin-right: 15px;
-    }
-  
-    .main_heading_div > h1 {
-      width: 190px;
-      height: 24px;
-    }
-  
-    .horizontal_line {
-      width: 100%;
-      max-width: 300px;
-      border: 1px solid #eeeeee;
-      margin-top: 15px;
-    }
-  
-  
-    .person_account_balance {
-      max-width: 320px;
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-      margin-left: 12px;
-    }
-  
-    .person_account_balance > h1 {
-      max-width: 320px;
-      width: 180px;
-      font-size: 20px;
-    }
-  
-    /* .person_account_balance > p {
-      max-width: 320px;
-      font-size: 11px;
-      margin-top: 5px;
-    } */
-  
-    .person_p{
-      max-width: 320px;
-      font-size: 12px;
-      margin-left: 0%;
-      width: 100%;
-      margin-top: 9px;
-  
-    }
-  
-    .person_account_balance > input {
-      max-width: 280px;
-      height: 50px;
-      font: 18px;
-      margin-left: 5px;
-    }
-    .person_account_opening_div {
-        width: 100%;
-        max-width: 320px;
-      }
-    
-      .person_add_accounts_inner_div {
-        width: 46%;
-        height: auto;
-      }
-    
-      .person_add_accounts_inner_div > img {
-        width: 30px;
-        height: 30px;
-        margin-top: 8px;
-      }
-    
-      .person_add_accounts_inner_div > p {
-        width: 140px;
-        height: 48px;
-        font-size: 12px;
-        margin-top: 5%;
-      }
-    
-      .person_left_side {
-        border: 2px solid #4799a6;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-      }
-    
-      .person_left_side > h5 {
-        color: #4799a6;
-        margin-top: 5%;
-      }
-    
-      .person_right_side {
-        border: 2px solid #757575;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-      }
-    
-      .person_right_side > h5 {
-        color: #e42538;
-        margin-top: 5%;
-      }
-
-    .add_person_btn {
-      max-width: 280px;
-      height: 50px;
-      margin: 20px 0;
-    }
+  .person_account_balance > h1 {
+    max-width: 320px;
+    width: 180px;
+    font-size: 14px;
   }
-  
-  /* ___________________________Media Query For 425px ______________________________ */
-  
-  @media (min-width:321px) and (max-width: 425px) {
-    .person_account_main_div {
-      width: 100%;
-      max-width: 425px;
-      height: auto;
-      margin-top: 2%;
-    }
-  
-    .main_heading_div {
-      width: 100%;
-      max-width: 425px;
-      height: 40px;
-      margin-top: 10px;
-    }
-  
-    .main_heading_div > img {
-      width: 20px;
-      height: 20px;
-      margin-left: 20px;
-      margin-right: 15px;
-    }
-  
-    .main_heading_div > h1 {
-      width: 190px;
-      height: 24px;
-    }
-  
-    .horizontal_line {
-      width: 100%;
-      max-width: 400px;
-      border: 1px solid #eeeeee;
-      margin-top: 15px;
-    }
-  
-    .person_account_balance {
-      max-width: 425px;
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-      margin-left: 12px;
-    }
-  
-    .person_account_balance > h1 {
-        max-width: 425px;
-        width: 180px;
-        font-size: 20px;
-      }
-    
-    .person_p{
-      max-width: 425px;
-      font-size: 13px;
-      margin-left: -8%;
-      width: 100%;
-      margin-top: 8px;
-  
-    }
-  
-    .person_account_balance > input {
-      max-width: 365px;
-      height: 50px;
-      font: 18px;
-      margin-left: 5px;
-    }
 
-    .person_account_opening_div {
-        width: 100%;
-        max-width: 425px;
-      }
-    
-      .person_add_accounts_inner_div {
-        width: 45%;
-        height: auto;
-      }
-    
-      .person_left_side {
-        border: 2px solid #4799a6;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-      }
-    
-      .person_left_side > h5 {
-        color: #4799a6;
-        margin-top: 5%;
-      }
-    
-      .person_right_side {
-        border: 2px solid #757575;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-      }
-    
-      .person_right_side > h5 {
-        color: #e42538;
-        margin-top: 5%;
-      }
-    
-      .person_add_accounts_inner_div > img {
-        width: 45px;
-        height: 45px;
-        margin-top: 10px;
-      }
-    
-      .person_add_accounts_inner_div > p {
-        width: 150px;
-        height: 48px;
-        font-size: 14px;
-        margin-top: 10%;
-      }
-    
-  
-    .add_person_btn {
-      max-width: 350px;
-      height: 50px;
-      margin: 20px;
-    }
+  .person_account_balance > p {
+    max-width: 320px;
+    font-size: 11px;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 15px;
   }
-  
-  /* ___________________________Media Query For 768px ______________________________ */
-  
-  @media (min-width:426px) and (max-width: 768px) {
-    .person_account_main_div {
-      width: 100%;
-      max-width: 768px;
-      height: auto;
-      margin-top: 2%;
-    }
-  
-    .main_heading_div {
-      width: 100%;
-      max-width: 600px;
-      height: 40px;
-      margin-top: 10px;
-    }
-  
-    .main_heading_div > img {
-      width: 20px;
-      height: 20px;
-      margin-left: 10px;
-      margin-right: 15px;
-    }
-  
-    .main_heading_div > h1 {
-      width: 200px;
-      height: 24px;
-    }
-  
-    .horizontal_line {
-      width: 100%;
-      max-width: 600px;
-      border: 1px solid #eeeeee;
-      margin-top: 15px;
-    }
-  
-  
-    .person_account_balance {
-      max-width: 768px;
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-      margin-left: 12px;
-    }
-  
-    .person_account_balance > h1 {
-      max-width: 100%;
-      width: 190px;
-      font-size: 24px;
-    }
-     
-    .person_account_balance > input {
-      max-width: 450px;
-      height: 50px;
-      font: 18px;
-      margin-left: 5px;
-    }
-     .person_p{
-      max-width: 390px;
-      font-size: 15px;
-      margin-left: -1%;
-      width: 100%;
-      margin-top: 10px;
+
+  .person_account_balance > input {
+    max-width: 300px;
+    height: 50px;
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  .account_balance_selection_currency {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+  }
+
+  .account_balance_selection_currency > select {
+    width: 80px;
+    height: 50px;
+    font-size: 12px;
+    background-position: calc(100% - 10px) center;
+  }
+
+  .account_balance_selection_currency > input {
+    max-width: 210px;
+    height: 50px;
   }
 
   .person_account_opening_div {
     width: 100%;
-    max-width: 768px;
+    max-width: 320px;
+    height: auto;
+    margin-left: 15px;
   }
 
   .person_add_accounts_inner_div {
-    width: 45%;
+    width: 47%;
     height: auto;
   }
 
-  .person_left_side {
-    border: 2px solid #4799a6;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  .person_add_accounts_inner_div > img {
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+  }
+
+  .person_add_accounts_inner_div > p {
+    width: 130px;
+    height: 55px;
+    font-size: 12px;
+    margin-top: 5%;
+  }
+
+  .person_left_side > h5 {
+    color: #4799a6;
+    margin-top: 5%;
+  }
+
+  .person_right_side > h5 {
+    color: #e42538;
+    margin-top: 5%;
+  }
+
+  .person_btn_div {
+    max-width: 320px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .add_person_btn {
+    max-width: 300px;
+    font-size: 14x;
+  }
+}
+
+/* ___________________________Media Query For 425px ______________________________ */
+
+@media (min-width: 321px) and (max-width: 400px) {
+  .person_account_main_div {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .main_heading_div {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .main_heading_div > img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .main_heading_div > h1 {
+    width: 190px;
+    height: 24px;
+    font-size: 16px;
+  }
+
+  .person_account_balance {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .person_account_balance > h1 {
+    max-width: 400px;
+    width: 180px;
+    font-size: 14px;
+  }
+
+  .person_account_balance > p {
+    max-width: 400px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .person_account_balance > input {
+    max-width: 340px;
+    height: 50px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .account_balance_selection_currency {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+  }
+
+  .account_balance_selection_currency > select {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    background-position: calc(100% - 10px) center;
+  }
+
+  .account_balance_selection_currency > input {
+    max-width: 230px;
+    height: 50px;
+  }
+
+  .person_account_opening_div {
+    width: 100%;
+    max-width: 385px;
+    margin: 10px 0;
+    margin-left: 15px;
+    height: auto;
+    padding: 0;
+  }
+
+  .person_add_accounts_inner_div {
+    width: 46%;
+    max-width: 360px;
+    height: auto;
+  }
+
+  .person_left_side > h5 {
+    color: #4799a6;
+    margin-top: 5%;
+  }
+
+  .person_right_side > h5 {
+    color: #e42538;
+    margin-top: 5%;
+  }
+
+  .person_add_accounts_inner_div > img {
+    width: 28px;
+    height: 28px;
+    margin-top: 10px;
+  }
+
+  .person_add_accounts_inner_div > p {
+    width: 140px;
+    height: 48px;
+    font-size: 12px;
+    margin-top: 5%;
+  }
+
+  .person_btn_div {
+    max-width: 350px;
+    width: 100%;
+    height: 81px;
+    margin-left: 0;
+  }
+  .add_person_btn {
+    max-width: 320px;
+    font-size: 14px;
+  }
+}
+
+/* ******************************************************************************* */
+
+@media (min-width: 401px) and (max-width: 450px) {
+  .person_account_main_div {
+    width: 100%;
+    max-width: 425px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .main_heading_div {
+    width: 100%;
+    max-width: 425px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .main_heading_div > img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .main_heading_div > h1 {
+    width: 190px;
+    height: 24px;
+    font-size: 16px;
+  }
+
+  .person_account_balance {
+    max-width: 425px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .person_account_balance > h1 {
+    max-width: 400px;
+    width: 180px;
+    font-size: 14px;
+  }
+
+  .person_account_balance > p {
+    max-width: 400px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .person_account_balance > input {
+    max-width: 400px;
+    height: 50px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .account_balance_selection_currency {
+    max-width: 410px;
+    width: 100%;
+    height: auto;
+  }
+
+  .account_balance_selection_currency > select {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    background-position: calc(100% - 10px) center;
+  }
+
+  .account_balance_selection_currency > input {
+    max-width: 290px;
+    height: 50px;
+  }
+
+  .person_account_opening_div {
+    width: 100%;
+    max-width: 415px;
+    margin: 10px 0;
+    margin-left: 10px;
+    height: auto;
+    padding: 0;
+  }
+
+  .person_add_accounts_inner_div {
+    width: 48%;
+    max-width: 410px;
+    height: auto;
+  }
+
+  .person_left_side > h5 {
+    color: #4799a6;
+    margin-top: 5%;
+  }
+
+  .person_right_side > h5 {
+    color: #e42538;
+    margin-top: 5%;
+  }
+
+  .person_add_accounts_inner_div > img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .person_add_accounts_inner_div > p {
+    width: 150px;
+    height: 48px;
+    font-size: 13px;
+    margin-top: 5%;
+  }
+
+  .person_btn_div {
+    max-width: 425px;
+    width: 100%;
+    height: 81px;
+    margin-left: 0;
+  }
+  .add_person_btn {
+    max-width: 350px;
+    font-size: 15px;
+  }
+}
+
+/* ___________________________Media Query For 768px ______________________________ */
+
+@media (min-width: 451px) and (max-width: 768px) {
+  .person_account_main_div {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+  }
+
+  .main_heading_div {
+    width: 100%;
+    max-width: 60%;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .main_heading_div > img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .main_heading_div > h1 {
+    width: 500px;
+    height: 24px;
+    font-size: 18px;
+  }
+
+  .person_account_balance {
+    max-width: 768px;
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .person_account_balance > h1 {
+    width: 500px;
+    font-size: 16px;
+  }
+
+  .person_account_balance > input {
+    max-width: 600px;
+    height: 50px;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .account_balance_selection_currency {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+  }
+
+  .account_balance_selection_currency > select {
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+    background-position: calc(100% - 10px) center;
+  }
+
+  .account_balance_selection_currency > input {
+    max-width: 480px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .person_account_balance > p {
+    font-size: 14px;
+    width: 500px;
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .person_account_opening_div {
+    max-width: 768px;
+    width: 60%;
+    margin-left: 25px;
+    padding: 0;
+  }
+
+  .person_add_accounts_inner_div {
+    width: 50%;
+    max-width: 768px;
+    height: auto;
   }
 
   .person_left_side > h5 {
     color: #4799a6;
     margin-top: 3%;
-  }
-
-  .person_right_side {
-    border: 2px solid #757575;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
   }
 
   .person_right_side > h5 {
@@ -529,23 +695,27 @@
   }
 
   .person_add_accounts_inner_div > img {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     margin-top: 10px;
   }
 
   .person_add_accounts_inner_div > p {
-    width: 180px;
-    height: 75px;
-    font-size: 20px;
-    line-height: 20px;
-    margin-top: 3%;
+    width: 160px;
+    height: 50px;
+    font-size: 14px;
   }
-  
-    .add_person_btn {
-      max-width: 400px;
-      height: 50px;
-      margin: 20px;
-    }
+
+  .person_btn_div {
+    max-width: 768px;
+    width: 60%;
+    height: 68px;
+    margin-left: 0;
   }
-  
+  .add_person_btn {
+    max-width: 450px;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+  }
+}
