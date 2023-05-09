@@ -247,9 +247,6 @@ background-color: white;
 
 }
 
-
-
-
 .account_balance_selection_currency > input {
   width: 490px;
   height: 50px;
@@ -281,7 +278,7 @@ background-color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 36%;
   height: auto;
 }
 
@@ -338,7 +335,7 @@ background-color: white;
   border: 1px solid #4799a6;
   margin: 20px 0;
   cursor: pointer;
-  margin-left: -5%;
+  margin-left: -15%;
   font-size: 16px;
 }
 
@@ -362,6 +359,7 @@ background-color: white;
     max-width: 320px;
     height: auto;
     overflow:hidden;
+    margin-left: 0;
   }
 
   .main_heading_div {
@@ -384,6 +382,7 @@ background-color: white;
   .account_title {
    max-width: 320px;
     width: 100%;
+    margin-left: 0;
   }
   .account_title > h1 {
     max-width: 300px;
@@ -400,8 +399,9 @@ background-color: white;
   }
 
   .account_title_inner_div {
-    max-width: 300px;
-    margin-left: 8px;
+    /* total width = 310px */
+    max-width: 304px;
+    margin-left: 6px;
     width: 100%;
   }
   .account_title_inner_div > img {
@@ -411,7 +411,7 @@ background-color: white;
   }
 
   .account_title_inner_div > input {
-    max-width: 260px;
+    max-width: 280px;
     margin-left: 10px;
     text-indent: 10px;
     font-size: 14px;
@@ -422,6 +422,7 @@ background-color: white;
     width: 100%;
     height: auto;
     margin-top: 20px;
+    margin-left: 0;
   }
 
   .account_amount > h1 {
@@ -433,11 +434,12 @@ background-color: white;
  
 
   .account_amount > input {
-    max-width: 300px;
+    max-width: 304px;
     height: 50px;
     font-size: 14px;
     width: 100%;
     text-indent: 10px;
+    margin-left: 6px;
   }
 
   .account_balance {
@@ -445,6 +447,7 @@ background-color: white;
     width: 100%;
     height: auto;
     margin-top: 20px;
+    margin-left: 0;
   }
 
   .account_balance > h1 {
@@ -462,9 +465,10 @@ background-color: white;
 
   .account_balance_selection_currency{
    
-    max-width: 320px;
+    max-width: 304px;
     width: 100%;
     height: auto;
+    margin-left: 6px;
   }
   
   
@@ -473,10 +477,11 @@ background-color: white;
     height: 50px;
     font-size: 12px;    
     background-position: calc(100% - 10px) center;
+    background-size: 13px;
   }
   
   .account_balance_selection_currency > input {
-    max-width: 210px;
+    max-width: 220px;
     height: 50px;
   }
   
@@ -484,42 +489,45 @@ background-color: white;
     max-width: 320px;
     font-size: 10px;
     margin-top: 10px;
+    margin-left: 15px;
   }
 
 
   .account_opening_div {
     width: 100%;
-    max-width: 320px;
+    max-width: 310px;
     height: auto;
-    margin-left: 15px;
+    margin-left: 30px;
   }
 
   .add_accounts_inner_div {
-    width: 47%;
-    max-width: 320px;
+    width: 46%;
+    max-width: 310px;
     height: auto;
   }
 
   .add_accounts_inner_div > img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     margin-top: 8px;
   }
 
   .add_accounts_inner_div > p {
     width: 130px;
     height: 55px;
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 5%;
   }
 
   .left_side > h5 {
     color: #4799a6;
     margin-top: 5%;
+    font-size: 12px;
   }
 
   .right_side > h5 {
     color: #e42538;
+    font-size: 12px;
     margin-top: 5%;
   }
 
@@ -535,11 +543,12 @@ background-color: white;
 
 /* ___________________________Media Query For 400px ______________________________ */
 
-@media (min-width:321px) and (max-width: 400px) {
+@media (min-width:331px) and (max-width: 400px) {
   .add_bank_account_main_div {
     max-width: 400px;
     height: auto;
     overflow: hidden;
+
   }
 
   .main_heading_div {
@@ -563,6 +572,7 @@ background-color: white;
   .account_title {
    max-width: 400px;
     width: 100%;
+    margin-left: 0;
   }
   .account_title > h1 {
     max-width: 350px;
@@ -575,12 +585,13 @@ background-color: white;
     height: 14px;
     font-size: 10px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .account_title_inner_div {
-    max-width: 350px;
-    margin-left: 8px;
+    /* total width 358px */
+    max-width: 348px;
+    margin-left: 10px;
     width: 100%;
   }
   .account_title_inner_div > img {
@@ -590,7 +601,7 @@ background-color: white;
   }
 
   .account_title_inner_div > input {
-    max-width: 310px;
+    max-width: 318px;
     margin-left: 10px;
     text-indent: 10px;
     font-size: 14px;
@@ -601,6 +612,7 @@ background-color: white;
     width: 100%;
     height: auto;
     margin-top: 20px;
+    margin-left: 0;
   }
 
   .account_amount > h1 {
@@ -610,7 +622,7 @@ background-color: white;
   }
 
   .account_amount > input {
-    max-width: 350px;
+    max-width: 348px;
     height: 50px;
     font-size: 14px;
     width: 100%;
@@ -622,6 +634,7 @@ background-color: white;
     width: 100%;
     height: auto;
     margin-top: 20px;
+    margin-left: 0;
   }
 
   .account_balance > h1 {
@@ -638,10 +651,10 @@ background-color: white;
   }
 
   .account_balance_selection_currency{
-   
-    max-width: 350px;
+    max-width: 358px;
     width: 100%;
     height: auto;
+    margin-left: 8px;
   }
   
   
@@ -653,7 +666,7 @@ background-color: white;
   }
   
   .account_balance_selection_currency > input {
-    max-width: 250px;
+    max-width: 240px;
     height: 50px;
   }
   
@@ -661,18 +674,19 @@ background-color: white;
     max-width: 350px;
     font-size: 10px;
     margin-top: 10px;
+    margin-left: 15px;
   }
 
 
   .account_opening_div {
     width: 100%;
-    max-width: 385px;
+    max-width: 370px;
     height: auto;
-    margin-left: 15px;
+    margin-left: 30px;
   }
 
   .add_accounts_inner_div {
-    width: 46%;
+    width: 45%;
     max-width: 360px;
     height: auto;
   }
@@ -742,6 +756,7 @@ background-color: white;
   .account_title {
    max-width: 425px;
     width: 100%;
+    margin-left: 0;
   }
   .account_title > h1 {
     max-width: 400px;
@@ -754,11 +769,11 @@ background-color: white;
     height: 14px;
     font-size: 10px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .account_title_inner_div {
-    max-width: 400px;
+    max-width: 388px;
     margin-left: 8px;
     width: 100%;
   }
@@ -769,7 +784,7 @@ background-color: white;
   }
 
   .account_title_inner_div > input {
-    max-width: 360px;
+    max-width: 356px;
     margin-left: 10px;
     text-indent: 10px;
     font-size: 14px;
@@ -780,6 +795,7 @@ background-color: white;
     width: 100%;
     height: auto;
     margin-top: 20px;
+    margin-left: 0;
   }
 
   .account_amount > h1 {
@@ -789,11 +805,13 @@ background-color: white;
   }
 
   .account_amount > input {
-    max-width: 400px;
+    /* total width is = 396px */
+    max-width: 388px;
     height: 50px;
     font-size: 14px;
     width: 100%;
     text-indent: 10px;
+    margin-left: 8px;
   }
 
   .account_balance {
@@ -801,6 +819,7 @@ background-color: white;
     width: 100%;
     height: auto;
     margin-top: 20px;
+    margin-left: 0;
   }
 
   .account_balance > h1 {
@@ -817,22 +836,23 @@ background-color: white;
   }
 
   .account_balance_selection_currency{
-   
-    max-width: 400px;
+   /* total width is = 396px */
+    max-width: 388px;
     width: 100%;
     height: auto;
+    margin-left: 8px;
   }
   
   
   .account_balance_selection_currency > select {
-    width: 80px;
+    width: 100px;
     height: 50px;
     font-size: 12px;    
     background-position: calc(100% - 10px) center;
   }
   
   .account_balance_selection_currency > input {
-    max-width: 320px;
+    max-width: 278px;
     height: 50px;
   }
   
@@ -840,6 +860,7 @@ background-color: white;
     max-width: 400px;
     font-size: 10px;
     margin-top: 10px;
+    margin-left: 15px;
   }
 
 
@@ -847,12 +868,12 @@ background-color: white;
     width: 100%;
     max-width: 425px;
     height: auto;
-    margin-left: 15px;
+    margin-left: 40px;
   }
 
   .add_accounts_inner_div {
-    width: 46%;
-    max-width: 400px;
+    width: 45%;
+    max-width: 425px;
     height: auto;
   }
 
@@ -994,7 +1015,6 @@ background-color: white;
   }
 
   .account_balance_selection_currency{
-   
     max-width: 600px;
     width: 100%;
     height: auto;
