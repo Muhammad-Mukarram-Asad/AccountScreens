@@ -12,7 +12,7 @@ import HKBottomNav from "../Bottom_Nav/HKBottomNav";
 
 import { useNavigate } from "react-router-dom";
 
- import styles from "./HKAccountItem.module.css";
+import styles from "./HKAccountItem.module.css";
 // import "./HKAccountsItem.css";
 
 // import bankIcon from "../../public/icons/bankIcon.svg";
@@ -38,7 +38,7 @@ const HKAccountItem = (props) => {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div className={styles.HKAccountItem_main_div}>
       <div className={styles.HK_AccountItem_title}>
         <img
           src={LeftArrow}
@@ -85,27 +85,27 @@ const HKAccountItem = (props) => {
             ) : null}
           </div>
         </div>
-
-        <div className={styles.accounts_div}>
-          <h2> Your Accounts</h2>
-          <button
-            className={styles.accounts_btn}
-            onClick={() => {
-              navigate("/addAccount");
-            }}
-          >
-            <AiOutlinePlus className={styles.plus_icon} />
-            ADD ACCOUNT
-          </button>
-        </div>
-        {
-          <div className={styles.accountlistingdiv}>
-            <HKAccountListing2 />
-          </div>
-        }
-        <HKBottomNav />
       </div>
-    </>
+
+      <div className={styles.accounts_div}>
+        <h2> Your Accounts</h2>
+        <button
+          className={styles.accounts_btn}
+          onClick={() => {
+            navigate("/addAccount");
+          }}
+        >
+          <AiOutlinePlus className={styles.plus_icon} />
+          ADD ACCOUNT
+        </button>
+      </div>
+      {
+        <div className={styles.accountlistingdiv}>
+          <HKAccountListing2 />
+        </div>
+      }
+      <HKBottomNav active={2} />
+    </div>
   );
 };
 

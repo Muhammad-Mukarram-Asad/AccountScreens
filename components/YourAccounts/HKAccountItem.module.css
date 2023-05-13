@@ -208,7 +208,7 @@ flex-grow: 0;
 .accounts_div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 50px;
@@ -257,6 +257,9 @@ flex-grow: 0;
   height: 45px;
 }
 
+.accountlistingdiv{
+  padding-bottom: 60px;
+}
 
 
 /* __________________Media Query of 320px Below:________________________________ */
@@ -264,7 +267,7 @@ flex-grow: 0;
 @media (max-width: 320px) {
   .HK_AccountItem_title {
     max-width: 320px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .HK_AccountItem_title > img{
@@ -287,7 +290,7 @@ flex-grow: 0;
   }
   .accounts_div {
     max-width: 320px;
-    height: 50px;
+    height: 25px;
   }
   .accounts_div > h2 {
     max-width: 156px;
@@ -310,7 +313,7 @@ flex-grow: 0;
   .accountlistingdiv{
     max-width: 320px;
     height: auto;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 
  
@@ -382,7 +385,7 @@ flex-grow: 0;
  
    .accounts_div {
      max-width: 370px;
-     height: 50px;
+     height: 25px;
    }
    .accounts_div > h2 {
      font-size: 16px;
@@ -411,7 +414,7 @@ flex-grow: 0;
  .accountlistingdiv{
    max-width: 370px;
    height: auto;
-   padding-bottom: 60px;
+   padding-bottom: 80px;
  }
   
 }
@@ -456,7 +459,7 @@ flex-grow: 0;
 
   .accounts_div {
     max-width: 425px;
-    height: 50px;
+    height: 25px;
   }
   .accounts_div > h2 {
     font-size: 20px;
@@ -482,7 +485,7 @@ flex-grow: 0;
 .accountlistingdiv{
   max-width: 425px;
   height: auto;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
   .AccountItem_account_icon_area {
     margin-right: 25px;
@@ -574,7 +577,7 @@ flex-grow: 0;
     max-width: 750px;
     height: auto;
     margin: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 
   .AccountItem_account_icon_area {
