@@ -4,11 +4,19 @@ import BackArrow from "../../../public/icons/backArrowIcon.svg";
 import RightArrow from "../../../public/icons/RightArrow.svg";
 import SearchIcon from "../../../public/icons/searchIcon.svg";
 import BankIcon from "../../../public/icons/bankIcon.svg"
+import Mobilink from "../../../public/icons/MobilinkMicrofinanceBankLtd.svg";
+import Meezan from "../../../public/icons/Meezan.svg"
+import Telenor from "../../../public/icons/TelenorMicrofinanceBank.svg"
+import JazzCash from "../../../public/icons/JazzCash.svg"
+import Allied from "../../../public/icons/AlliedBank.svg"
+import UBL from "../../../public/icons/UBL.svg"
+
 
 import { useNavigate } from "react-router-dom";
 
 import styles from "./SelectAccount.module.css";
 function SelectAccounts() {
+ 
   const navigate = useNavigate();
   return (
     <div className={styles.fourth_screen_select_main_div}>
@@ -38,7 +46,7 @@ function SelectAccounts() {
 
         <div className={styles.bank_list_inner_div}>
           <div className={styles.bank_img_div}>
-            <img src={BankIcon} alt="cash_icon_img" />
+            <img src={Telenor} alt="cash_icon_img" />
           </div>
 
           <p>Telenor Microfinance</p>
@@ -48,7 +56,7 @@ function SelectAccounts() {
 
         <div className={styles.bank_list_inner_div}>
           <div className={styles.bank_img_div}>
-            <img src="https://www.abl.com/src/uploads/2020/11/Allied-Bank-Logo1.png" alt="cash_icon_img" />
+            <img src={Allied} alt="cash_icon_img" />
           </div>
 
           <p>Allied Bank</p>
@@ -58,7 +66,7 @@ function SelectAccounts() {
 
         <div className={styles.bank_list_inner_div}>
           <div className={styles.bank_img_div}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/United_Bank_Limited_logo.svg/1200px-United_Bank_Limited_logo.svg.png" alt="cash_icon_img" />
+            <img src={UBL} alt="cash_icon_img" />
           </div>
 
           <p>UBL Bank</p>
@@ -68,17 +76,17 @@ function SelectAccounts() {
 
         <div className={styles.bank_list_inner_div}>
           <div className={styles.bank_img_div}>
-            <img src="https://s.rozee.pk/company_logos/30/68296145395519.png" alt="cash_icon_img" />
+            <img src={BankIcon} alt="cash_icon_img" />
           </div>
 
-          <p>Bank Al Habib</p>
+          <p>Bank Al Falah</p>
         </div>
 
         <hr className={styles.hr} />
 
         <div className={styles.bank_list_inner_div}>
           <div className={styles.bank_img_div}>
-            <img src="https://www.meezanbank.com/wp-content/themes/mbl/images/logo-vertical.png" alt="cash_icon_img" />
+            <img src={Meezan} alt="cash_icon_img" />
           </div>
 
           <p>Meezan Bank</p>
@@ -88,15 +96,23 @@ function SelectAccounts() {
 
         <div className={styles.bank_list_inner_div}>
           <div className={styles.bank_img_div}>
-            <img src={BankIcon} alt="cash_icon_img" />
+            <img src={JazzCash} alt="cash_icon_img" />
           </div>
 
-          <p>Bank of Khyber</p>
+          <p>Jazz Cash</p>
         </div>
 
         <hr className={styles.hr} />
 
+        <div className={styles.bank_list_inner_div}>
+          <div className={styles.bank_img_div}>
+            <img src={Mobilink} alt="cash_icon_img" />
+          </div>
 
+          <p>Mobilink</p>
+        </div>
+
+        <hr className={styles.hr} />
       </div>
     </div>
   );

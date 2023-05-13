@@ -112,7 +112,7 @@
   line-height: 16px;
   letter-spacing: 0.5px;
   color: #2d2d2d;
-  margin: 27px 15px;
+  margin: 26px 15px;
 }
 
 .bank_img_div {
@@ -180,6 +180,7 @@
     width: 270px;
     height: 34px;
     text-indent: 6px;
+    outline: none;
   }
   .search_div > input::placeholder {
     font-size: 14px;
@@ -210,16 +211,14 @@
   }
 
   .bank_img_div {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1px solid #D7D7D7;
-    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    margin-top: 9px;
   }
 
   .bank_img_div > img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 28px;
   }
 }
 
@@ -260,7 +259,7 @@
     width: 20px;
     height: 20px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .search_div > input {
@@ -302,8 +301,8 @@
   }
 
   .bank_img_div > img {
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
   }
 }
 
@@ -373,12 +372,12 @@
   .bank_list_inner_div > p {
     font-size: 15px;
     line-height: 16px;
-    margin: 28px 10px;
+    margin: 26px 10px;
   }
 
   .bank_img_div {
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     border: 1px solid #D7D7D7;
     margin-top: 10px;
