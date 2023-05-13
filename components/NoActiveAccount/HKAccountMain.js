@@ -30,7 +30,6 @@ const HKAccountMain = () => {
           />
         </div>
 
-        {/* <hr className={styles.hr} /> */}
         <img
           className={styles.img}
           src={first_screen_image}
@@ -44,16 +43,19 @@ const HKAccountMain = () => {
           organized in one place.
         </p>
 
+        <div className={styles.btn_primary_div}>
+
         <button
           className={styles.btn_primary}
           onClick={() => navigate("/secondScreen")}
         >
           Add New Account
         </button>
+        </div>
 
-        <hr className={styles.hr} />
+        {/* <div className={styles.hr} /> */}
       </div>
-      <HKBottomNav />
+      <HKBottomNav active={2} />
     </>
   );
 };
